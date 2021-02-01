@@ -1,9 +1,39 @@
-body {
-  font-family: "Raleway", "Sans serif";
-  margin: 0;
+/* POLICES */
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url(Polices/webfontkit-20201026-085001/raleway-variablefont_wght-webfont.eot);
+    }
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url(Polices/webfontkit-20201026-085001/raleway-variablefont_wght-webfont.woff) format('woff'),
+         url(Polices/webfontkit-20201026-085001/raleway-variablefont_wght-webfont.ttf) format('truetype'),
+         url(Polices/webfontkit-20201026-085001/raleway-variablefont_wght-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url(Polices/webfontkit-20201026-085001/raleway-italic-variablefont_wght-webfont.eot);
+    }
+
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url(Polices/webfontkit-20201026-085001/raleway-italic-variablefont_wght-webfont.woff) format('woff'),
+         url(Polices/webfontkit-20201026-085001/raleway-italic-variablefont_wght-webfont.ttf) format('truetype'),
+         url(Polices/webfontkit-20201026-085001/raleway-italic-variablefont_wght-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.eot);
+    src: url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.woff) format('woff'),
+         url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.ttf) format('truetype'),
+         url(Polices/webfontkit-20201026-085001/raleway-regular-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

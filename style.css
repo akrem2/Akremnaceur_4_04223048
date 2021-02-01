@@ -37,3 +37,40 @@
     font-weight: normal;
     font-style: normal;
 }
+/* GENERAL */
+
+#blocpage
+{
+    width: 95%;
+    margin: auto;
+}
+
+body
+{
+    font-family: 'ralewayregular';
+    font-weight: normal;
+    margin: 0px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+h1
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h2
+{
+    font-size: 1em;
+}
+.titresection
+{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+ul
+{
+    list-style-type: none;
+}

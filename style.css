@@ -61,7 +61,9 @@ h1
     font-size: 1.3em;
     font-weight: bold;
 }
+
 h2
+
 {
     font-size: 1em;
 }
@@ -73,4 +75,115 @@ h2
 ul
 {
     list-style-type: none;
+}
+
+/* HEADER */
+
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: sticky;
+    top: -1px;
+    background-color: white;
+    padding: 10px 35px 0px 35px;
+    background-size: cover;
+    height: 60px;
+}
+
+#logo img
+{
+    height: 50px;
+}
+
+header ul
+{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 0px 10px 0px;
+    align-items: flex-end;
+}
+
+nav a
+{
+    padding-top: 52px;
+}
+
+.navpuce
+{
+    padding-right: 40px;
+}
+#sinscrire
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.navpuce a:hover
+{
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+
+/* HEADER RESPONSIVE */
+
+@media screen and (max-width: 980px)
+{
+    #header
+    {
+        height: 105px;
+        padding: 0px;
+    }
+
+    #logo
+    {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+    }
+    #sinscrire
+    {
+        position: absolute;
+        top: -30px;
+        right: 20px;
+    }
+
+    .navpuce
+    {
+        padding: 0px 0px 20px 0px;
+        border-bottom: 3px #F2F2F2 solid;
+        width: 50%;
+        text-align: center;
+        margin: 0px 0px -17px 0px;
+    }
+
+    .navpuce:hover
+    {
+        border-bottom: 3px #0065FC solid;
+    }
+
+    .navpuce:hover a
+    {
+        color: #0065FC;
+    }
+
+    .navpuce a:hover
+    {
+        border-top: none;
+    }
+
+    header ul
+    {
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #nav
+    {
+        width: 100%;
+    }
 }

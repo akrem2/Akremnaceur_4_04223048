@@ -187,3 +187,68 @@ nav a
         width: 100%;
     }
 }
+
+/* RECHERCHE */
+
+#section1
+{
+    margin: 15px 0px 15px 0px;
+}
+
+#section1head
+{
+    padding-bottom: 15px;
+}
+
+#recherche
+{
+    width: 450px;
+    padding-left: 17px;
+}
+
+form
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#mapmarkerblock
+{
+    background-color: #F2F2F2;
+    padding: 12px 20px 12px 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#searchbox
+{
+    border: 1px solid rgba(128, 128, 128, 0.2)
+}
+
+#button
+{
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    outline: none;
+}
+
+#button:hover
+{
+    background: #DEEBFF;
+    color: #0065FC;
+    transition: 0.8s;
+    box-shadow: 3px 1px 10px rgba(128, 128, 128, 0.4);
+}
+
+input[placeholder]
+{
+    text-align: left;
+    padding-left: 20px;
+}

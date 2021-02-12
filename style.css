@@ -252,3 +252,593 @@ input[placeholder]
     text-align: left;
     padding-left: 20px;
 }
+
+/* RECHERCHE RESPONSIVE */
+
+@media screen and (max-width: 980px)
+{
+    #button
+    {
+        background-image: url(images/icons8-search-white.svg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 10px 9px;
+        background-color: #0065FC;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: rgba(128, 128, 128, 0);
+        padding-left: 30px;
+        padding-right: 0px;
+        width: 50px;
+        border: none;
+        text-decoration: none;
+        font-size: 1em;
+        outline: none;
+    }
+    #recherche
+    {
+        width: 300px;
+    }
+    #searchbox
+    {
+        width: 230px;
+    }
+    #button:hover
+    {
+        background: #DEEBFF;
+        color: rgba(128, 128, 128, 0);
+        transition: 0.8s;
+        background-image: url(images/icons8-search-blue.svg);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: 8px 7px;
+        box-shadow: 3px 1px 10px rgba(128, 128, 128, 0.4);
+    }
+}
+
+/* FILTRES */
+
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px 0px 15px 0px;
+    flex-wrap: wrap;
+}
+
+.filtre
+{
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 25px;
+    padding: 12.5px 15px 12.5px 0px;
+    font-weight: 600;
+}
+
+#filtres i
+{
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 10px;
+    color: #0065FC;
+}
+#familiallogo
+{
+    width: 15px;
+    padding-left: 10px;
+}
+#filtrestitle
+{
+    padding: 18px 0px 0px 0px;
+    font-size: 0.9em;
+}
+
+#filtres a:hover
+{
+    background-color: #0065FC;
+    color: white;
+    padding: 16px 16px 16px 3px;
+    transition: 0.4s;
+}
+
+#info
+{
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+#info i
+{
+    margin-right: 10px;
+    color: rgba(128, 128, 128, 0.4);
+}
+
+/* SECTION 2 */
+
+#section2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.displaynone
+{
+    display: none;
+}
+.prix
+{
+    font-style: italic;
+    font-weight: 800;
+}
+.bluestar
+{
+    color: #0065FC;
+}
+.greystar
+{
+    color: #F2F2F2;
+}
+
+/* HEBERGEMENTS MARSEILLE SECTION2A */
+
+#section2a
+{
+    padding: 15px 40px 15px 40px;
+    background-color: #F2F2F2;
+    margin: 10px 20px 20px 0px;
+    border-radius: 15px;
+    max-width: 1000px;
+    min-width: 520px;
+    flex: 2.6;
+}
+
+#hébergementsflexcontainer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hébergementcarte
+{
+    width: 250px;
+    height: 230px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
+}
+.hébergementcarte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.carteimage
+{
+    height: 125px;
+    width: 240px;
+    margin: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#lacannebière
+{
+    background-image: url(images/hebergements/4_small/auberge_de_la_cannebiere.jpg);
+    background-size: cover;
+}
+#duport
+{
+    background-image: url(images/hebergements/4_small/hotel_du_port.jpg);
+    background-size: cover;
+}
+#lesmouettes
+{
+    background-image: url(images/hebergements/4_small/hotel_les_mouettes.jpg);
+    background-size: cover;
+}
+#lamer
+{
+    background-image: url(images/hebergements/4_small/hotel_de_la_mer.jpg);
+    background-size: cover;
+    background-position-y: -80px;
+}
+#lepanier
+{
+    background-image: url(images/hebergements/4_small/auberge_le_panier.jpg);
+    background-size: cover;
+}
+#chezamina
+{
+    background-image: url(images/hebergements/4_small/hotel_chez_amina.jpg);
+    background-size: cover;
+    background-position-y: -110px;
+}
+.cartelégende
+{
+    padding: 5px 0px 0px 15px;
+}
+.cartelégende h2,p
+{
+    margin: 0px 0px 0px 0px;
+    padding:5px 0px 0px 0px;
+}
+.cartelégende p:last-child
+{
+    padding-top: 2px;
+}
+
+#afficherplus:hover
+{
+    font-weight: 800;
+}
+
+/* MARSEILLE 2A RESPONSIVE 680px et 400px petits tels */
+
+@media screen and (max-width: 680px)
+{
+    #section2a
+    {
+        min-width: 300px;
+        margin: 10px 0px 20px 0px;
+    }
+    #hébergementsflexcontainer
+    {
+        flex-direction: column;
+    }
+    .hébergementcarte
+    {
+        width: auto;
+    }
+    .hébergementcarte .carteimage
+    {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #section2a
+    {
+        min-width: 270px;
+        padding: 15px 20px 15px 20px;
+    }
+    #hébergementsflexcontainer
+    {
+        flex-direction: column;
+    }
+    .hébergementcarte
+    {
+        width: auto;
+    }
+    .hébergementcarte .carteimage
+    {
+       width: 250px;
+    }
+}
+
+/* POPULAIRES SECTION2B */
+
+#section2b
+{
+    padding: 15px 40px 15px 40px;
+    background-color: #F2F2F2;
+    margin: 10px 0px 20px 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    min-width: 320px;
+    flex: 1;
+}
+#section2bheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#stonksarrow
+{
+    padding-top: 18px;
+}
+
+#populairesflexcontainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.populairecarte
+{
+    width: 330px;
+    height: 150px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
+}
+.populairecarte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+.populairecarte a
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.carteimagepop
+{
+    height: 140px;
+    width: 120px;
+    margin: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: tomato;
+}
+.cartelégendepop
+{
+    padding: 5px 0px 0px 15px;
+}
+.cartelégendepop h2,p
+{
+    margin: 0px 0px 0px 0px;
+    padding:5px 0px 10px 0px;
+}
+.cartelégendepop p:last-child
+{
+    padding-top: 40px;
+}
+#coeurdeleaustars
+{
+    padding-top: 20px;
+}
+
+#soleildumatin
+{
+    background-image: url(images/hebergements/4_small/hotel_le_soleil_du_matin.jpg);
+    background-size: cover;
+}
+#aucoeurdeleau
+{
+    background-image: url(images/hebergements/4_small/au_coeur_de_l_eau_chambres_d_hotes.jpg);
+    background-size: cover;
+}
+#toutbleuetblanc
+{
+    background-image: url(images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 680px)
+{
+    #section2b
+    {
+        margin: 10px 0px 20px 0px;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #section2b
+    {
+        min-width: 270px;
+        padding: 15px;
+    }
+    #section2bheader
+    {
+        padding: 0px 20px 0px 20px;
+    }
+    .cartelégendepop p:last-child
+    {
+        padding-top: 15px;
+    }
+}
+
+/* ACTIVITES */
+#section3
+{
+    padding: 20px 0px 0px 0px;
+}
+
+#activitésflexcontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+    flex-wrap: wrap;
+}
+
+.activitélégende
+{
+    padding: 6px 0px 0px 15px;
+    font-weight: 700;
+}
+.carte
+{
+    width: 300px;
+    border: 1px solid #DEEBFF;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4);
+    border-radius: 15px;
+}
+.carte:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+.cartesolo, .carteduo
+{
+    height: 500px;
+}
+.carteduo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cartesolo .carte
+{
+    height: 500px;
+}
+.carteduo .carte
+{
+    height: 230px;
+}
+
+.cartesolo .activitéimage
+{
+    width: 300px;
+    height: 460px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#vieuxportimg
+{
+    background-image: url(images/activites/4_small/vieux_port.jpg);
+    background-size: cover;
+    background-position-x: -200px;
+}
+#calanquesimg
+{
+    background-image: url(images/activites/4_small/calanques.jpg);
+    background-size: cover;
+    background-position-x: -200px;
+}
+
+.carteduo .activitéimage
+{
+    width: 300px;
+    height: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#fortimg
+{
+    background-image: url(images/activites/4_small/fort_pomegues.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+}
+#frioulimg
+{
+    background-image: url(images/activites/4_small/ile_frioul.jpg);
+    background-size: cover;
+}
+#lagardeimg
+{
+    background-image: url(images/activites/4_small/notre_dame_la_garde.jpg);
+    background-size: cover;
+}
+#longchampimg
+{
+    background-image: url(images/activites/4_small/parc_longchamp.jpg);
+    background-size: cover;
+}
+
+/* RESPONSIVE 1330 PX TAILLE CARTES */
+
+@media screen and (max-width: 980px)
+{
+    .cartesolo
+    {
+        height: 230px;
+        margin: auto;
+    }
+    .carteduo
+    {
+        width: auto;
+        margin: auto;
+        padding: 40px 0px 40px 0px;
+    }
+    .cartesolo .carte
+    {
+        height: 230px;
+        width: auto;
+    }
+    .carteduo .carte
+    {
+        width: auto;
+    }
+    .cartesolo .activitéimage
+    {
+        width: 350px;
+        height: 190px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .carteduo .activitéimage
+    {
+        width: 350px;
+    }
+    #vieuxportimg, #calanquesimg
+    {
+        background-position-x: 0px;
+    }
+    #fortimg
+    {
+        background-position-y: -200px;
+    }
+
+}
+
+@media screen and (max-width: 400px)
+{
+    .cartesolo .activitéimage, .carteduo .activitéimage
+    {
+        width: 300px;
+    }
+}
+
+/* FOOTER */
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 25px 25px 50px 25px;
+    background-color: #F2F2F2;
+    background-size: 120%;
+}
+
+.subtitle
+{
+    padding-bottom: 10px;
+}
+
+#footer a:hover
+{
+    text-decoration: underline;
+}
+
+#footer ul
+{
+    padding: 10px 0px 0px 0px;
+}
+
+.subtitle
+{
+    font-weight: 600;
+}
+
+#apropos, #noshébergements, #assistance
+{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+}
